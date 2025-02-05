@@ -1,0 +1,45 @@
+body{
+    box-sizing: border-box;
+    background-color: rgb(28, 28, 32);
+    color: white;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.nav ul{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav ul li{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.welcome{
+    color: orange;
+}
+
+.welcome p {
+    color: white;
+    width: 400px;
+}
