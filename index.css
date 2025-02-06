@@ -2,6 +2,9 @@ body{
     box-sizing: border-box;
     background-color: #0F0F0F;
     color: white;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .nav{
