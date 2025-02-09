@@ -1,0 +1,61 @@
+$body: black;
+$text: white;
+
+body{
+    box-sizing: border-box;
+    background: $body;
+    color: $text;
+    
+}
+
+.welcome{
+    border: 1px solid white;
+    border-radius: 12px;
+    display: block;
+    flex-direction: column;
+    
+    .nav{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        float: right;
+
+
+        ul{
+            display: flex;
+            gap: 20px;
+
+            li{
+                list-style: none;
+               
+                a{
+                    text-decoration: none;
+                    color: $text;
+
+                   
+                }
+
+                :hover{
+                    color: orange;
+                    border-bottom: 1px solid orange;
+                }
+            }
+
+        }
+    }
+
+    h1{
+    
+        width: 400px;
+        height: auto;
+        font-family: verdana;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid blue;
+    }
+}
