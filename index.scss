@@ -1,5 +1,6 @@
-$body: black;
+$body: #232D3F;
 $text: white;
+$direction: row-reverse;
 
 body{
     box-sizing: border-box;
@@ -10,9 +11,12 @@ body{
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 100px 120px 120px 150px black inset;
+    margin: 0;
     
 }
 
+// welcome section
 .welcome{
     border: 1px solid silver;
     border-radius: 12px;
@@ -24,7 +28,7 @@ body{
     background-image: url(./images/cubes.jpg);
     background-repeat: no-repeat;
     background-position-x: left;
-    box-shadow: 200px 90px 80px  black inset;
+    box-shadow: 200px 50px 20px 10px  black inset;
 
 
 
@@ -66,6 +70,7 @@ body{
         display: flex;
         flex-direction: column;
 
+
         h1{
     
             width: 400px;
@@ -79,8 +84,127 @@ body{
         .logos{
             display: flex;
             justify-content: space-around;
+            width: 60%;
             align-items: center;
+            flex-direction: row-reverse;
 
+            p{
+                border: 1px solid silver;
+                border-radius: 20px;
+                width: 300px;
+                opacity: 0.5;
+            }
+
+           .icons{
+
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 10px;
+
+                li{
+                    display: flex;
+                    border: 1px solid;
+                    border-radius: 50%;
+
+                    a{
+                        display: flex;
+                        text-decoration: none;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+           }
         }
+    }
+}
+
+// value sections
+.Value{
+
+    width: 80%;
+    margin-top: 20px;
+    
+    h3{
+        border-bottom: 1px solid white;
+        width: 15rem;
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // skills section
+    section{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        
+        .skill{
+            border: 1px solid;
+            border-radius: 12px;
+
+            h4{
+                color: lightblue;
+            }
+
+            p{
+                text-wrap: wrap;
+            }
+
+            img{
+                width: 290px;
+                height: 155px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+        }
+
+    }
+}
+
+// sample pages
+.pages{
+
+    margin: 10px 0 0 0 ;
+    padding: 0;
+    height: auto;
+
+    .sample{
+        border-bottom: 1px solid white;
+        height: 300px;
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+
+        div{
+            border: 1px solid;
+            width: 25rem;
+            h4{
+                color: white;
+                font-size: 15px;
+    
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+    
+                :hover{
+                    color: orange;
+                }
+            }
+    
+            p{
+                text-wrap:inherit ;
+                width: 40%;
+            }
+        }
+
+       img{
+        width: 300px;
+
+       }
     }
 }
