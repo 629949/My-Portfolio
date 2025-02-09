@@ -2,20 +2,32 @@ body {
   box-sizing: border-box;
   background: black;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .welcome {
-  border: 1px solid white;
+  border: 1px solid silver;
   border-radius: 12px;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
+  width: 80%;
+  height: 60vh;
+  background-image: url(./images/cubes.jpg);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  box-shadow: 200px 90px 80px black inset;
 }
 .welcome .nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
+  justify-content: flex-end;
+  align-items: top;
   float: right;
+  width: 90%;
 }
 .welcome .nav ul {
   display: flex;
@@ -32,13 +44,20 @@ body {
   color: orange;
   border-bottom: 1px solid orange;
 }
-.welcome h1 {
+.welcome .intro {
+  display: flex;
+  flex-direction: column;
+}
+.welcome .intro h1 {
   width: 400px;
   height: auto;
   font-family: verdana;
-}
-.welcome .intro {
+  color: orange;
   display: flex;
-  flex-direction: row;
-  border: 1px solid blue;
+  justify-content: flex-end;
+}
+.welcome .intro .logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */
