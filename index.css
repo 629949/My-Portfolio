@@ -124,24 +124,28 @@ body {
 }
 
 .pages {
-  margin: 10px 0 0 0;
+  margin: 30px 0 0 0;
   padding: 0;
   height: auto;
 }
 .pages .sample {
-  border-bottom: 1px solid white;
   height: 300px;
   width: 800px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .pages .sample div {
-  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 25rem;
 }
 .pages .sample div h4 {
   color: white;
   font-size: 15px;
+  font-weight: bolder;
 }
 .pages .sample div h4 a {
   text-decoration: none;
@@ -152,8 +156,42 @@ body {
 }
 .pages .sample div p {
   text-wrap: inherit;
-  width: 40%;
+  margin: 0;
 }
 .pages .sample img {
   width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px;
+}
+.pages .sample:hover {
+  border-radius: 12px;
+  transition: transform 0.9s ease-in-out;
+  transform: scale(1.1);
+}
+
+footer {
+  height: 20rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #232D3F, black);
+  box-shadow: 120px 20px #232D3F inset;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer h6 {
+  font-size: 25px;
+}
+footer #contact {
+  display: flex;
+  margin: 0;
+}
+footer #contact ul {
+  display: block;
+}
+footer #contact ul li {
+  list-style: none;
 }/*# sourceMappingURL=index.css.map */

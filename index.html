@@ -20,9 +20,9 @@
     <div class="welcome">
     <div class="nav">
         <ul>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#pages">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="">Ask?</a></li>
+            <li><a href="#ask">Ask?</a></li>
         </ul>
     </div>
 
@@ -95,7 +95,7 @@
     </div>
 
     <!-- sample pages -->
-    <section class="pages">
+    <section class="pages" id="pages">
         <div class="sample">
             <div>
             <h4>
@@ -107,9 +107,9 @@
                 </div>
                
 
-            <img src="./images/barista.jpg" alt="">
+            <img src="./images/barista.jpg" alt="barista">
         </div>
-        <div class="sample">
+        <div class="sample" id="change">
 
             <div>
                 <h4><a href="">E-health</a></h4>
@@ -117,6 +117,8 @@
                     easily get in touch with medical services with the use of technology
                 </p>
             </div>
+
+            <img src="./images/ehealth.jpg" alt="health">
             
         </div>
         <div class="sample">
@@ -126,9 +128,11 @@
                 <p>This is basically a site that checks for a github user and returns the user you have serached for.
                 </p>
             </div>
+
+            <img src="./images/github.png" alt="github">
           
         </div>
-        <div class="sample">
+        <div class="sample" id="change">
 
             <div>
                 <h4><a href="">Task Management tool</a></h4>
@@ -136,12 +140,14 @@
                     or day to day activities
                 </p>
             </div>
+
+            <img src="./images/todo.jpg" alt="taskManagement">
            
         </div>
     </section>
 
     <div class="webtools">
-        <p>Some of the Languages i am familiar with</p>
+        <p>Learning through different tools</p>
         <div class="toolLogo">
             <i class='bx bxl-javascript' style='color:#eced12; font-size: 100px; '  ></i>
             <i class='bx bxl-react' style='color:#1cf1d4; font-size: 100px;'  ></i>
@@ -157,10 +163,19 @@
             <ul>
                 <li>+256 771-629-949</li>
                 <li>emmanuelobua54@gmail.com</li>
+                <p>or</p>
+                <div class="icons">
+                    <ul>
+                        <li><a href=""><i class='bx bxl-linkedin-square' style='color:#4e74db; font-size: 30px;' ></i></li></a>
+                        <li><a href=""><i class='bx bxl-github' style='color:#cad1e1; font-size: 30px;' ></i></a></li>
+                        <li><a href=""><i class='bx bxl-gmail' style='color:#541e15; font-size: 30px;'  ></i></a></li>
+                    </ul>
+                </div>
+                
             </ul>
         </div>
 
-        <div class="ask">
+        <div class="ask" id="ask">
             <input type="text" id="input">
             <button id="btn">submit</button>
         </div>
