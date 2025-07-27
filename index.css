@@ -194,4 +194,97 @@ footer #contact ul {
 }
 footer #contact ul li {
   list-style: none;
+}
+
+@media (max-width: 1024px) {
+  .welcome,
+  .Value,
+  .pages .sample {
+    width: 95%;
+  }
+  .welcome {
+    height: auto;
+    min-height: 400px;
+  }
+  .Value section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pages .sample {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .pages .sample img {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .welcome {
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+  }
+  .welcome .nav {
+    width: 100%;
+  }
+  .welcome .nav ul {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .welcome .intro h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .welcome .intro .logos {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .welcome .intro .logos p {
+    width: 100%;
+  }
+  .Value {
+    width: 100%;
+  }
+  .Value h3 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .Value section {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .Value section .skill img {
+    width: 100%;
+    height: auto;
+  }
+  .pages .sample {
+    width: 100%;
+    flex-direction: column;
+  }
+  .pages .sample img {
+    width: 100%;
+    height: auto;
+  }
+  .pages .sample div {
+    width: 100%;
+  }
+  footer {
+    height: auto;
+  }
+  footer h6 {
+    font-size: 18px;
+  }
+  footer #contact {
+    flex-direction: column;
+  }
+  footer #contact ul {
+    padding: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
